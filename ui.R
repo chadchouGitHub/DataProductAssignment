@@ -18,7 +18,7 @@ shinyUI(pageWithSidebar(
                 h4('Which resulted in a prediction score of '),
                 verbatimTextOutput("prediction"),
                 h5('This score is base on a Type2 Diabetes Study in German'),
-                h6('Schulze, M. B. et al. An accurate risk score based on anthropometric, dietary, and lifestyle factors to predict the development of type 2 diabetes. Diabetes Care 30, 510–5 (2007). '),
+                h6('Schulze, M. B. et al. An accurate risk score based on anthropometric, dietary, and lifestyle factors to predict the development of type 2 diabetes. Diabetes Care 30, 510–5 (2007). ')
                
                 
         )

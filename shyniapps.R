@@ -1,2 +1,2 @@
 library(shinyapps)
-shinyapps::deployApp('~/shyni')
+shinyapps::deployApp('~/DataProductAssignment')
