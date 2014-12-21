@@ -1,13 +1,13 @@
-library(shiny)
-
+diabetesRisk <- function(waist, height, age) waist*7.4-height*2.4+age*4.3
 
 shinyServer(
         function(input, output) {
-                output$text1 <- renderText({input$text1})
-                output$text2 <- renderText({input$text2})
-                output$text3 <- renderText({
-                        input$goButton
-                        isolate(paste(input$text1, input$text2))
-                })
+                output$inputValueWaist <- renderPrint({input$waist})
+                output$inputValueHeight <- renderPrint({input$height})
+                output$inputValueAge <- renderPrint({input$age})
+                output$prediction <- renderPrint({diabetesRisk(input$waist,
+                                                               input$height,
+                                                               input$age
+                                                               )})
         }
 )

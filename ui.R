@@ -1,18 +1,22 @@
 library(shiny)
 shinyUI(pageWithSidebar(
-        headerPanel("Hello Shiny!"),
+        # Application title
+        headerPanel("German Diabetes Risk Score"),
+        
         sidebarPanel(
-                textInput(inputId="text1", label = "Input Text1"),
-                textInput(inputId="text2", label = "Input Text2"),
-                actionButton("goButton", "Go!")
+                numericInput('waist', 'waist cm', 90, min =28, max = 200, step = 1),
+                numericInput('height', 'height cm', 90, min = 90, max = 250, step = 1),
+                numericInput('age', 'Glucose mg/dl', 90, min = 1, max = 100, step = 1),
+                submitButton('Submit')
         ),
         mainPanel(
-                p('Output text1'),
-                textOutput('text1'),
-                p('Output text2'),
-                textOutput('text2'),
-                p('Output text3'),
-                textOutput('text3')
+                h3('Results of prediction'),
+                h4('You entered'),
+                verbatimTextOutput("inputValueWaist"),
+                verbatimTextOutput("inputValueHeight"),
+                verbatimTextOutput("inputValueAge"),
+                h4('Which resulted in a prediction score of '),
+                verbatimTextOutput("prediction")
         )
+ )
 )
-        )
