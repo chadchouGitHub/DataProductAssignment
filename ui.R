@@ -4,9 +4,9 @@ shinyUI(pageWithSidebar(
         headerPanel("German Diabetes Risk Score"),
         
         sidebarPanel(
-                numericInput('waist', 'waist cm', 90, min =28, max = 200, step = 1),
-                numericInput('height', 'height cm', 90, min = 90, max = 250, step = 1),
-                numericInput('age', 'Glucose mg/dl', 90, min = 1, max = 100, step = 1),
+                numericInput('waist', 'waist cm', 50, min =28, max = 200, step = 1),
+                numericInput('height', 'height cm', 175, min = 90, max = 250, step = 1),
+                numericInput('age', 'age', 45, min = 1, max = 100, step = 1),
                 submitButton('Submit')
         ),
         mainPanel(
