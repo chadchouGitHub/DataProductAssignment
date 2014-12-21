@@ -3,9 +3,11 @@ German Type2 Diabetes Score
 
 
 
-###This is a presentation for my shinyapp. 
-###A shiny App use to caculate a Type2 diabetes risk score in Genman.
-###You can find this shinyApp at this web address:
+This is a presentation for my shinyapp. 
+
+A shiny App use to caculate a Type2 diabetes risk score in Genman.
+
+You can find this shinyApp at this web address:
 
 https://chiachingchou.shinyapps.io/DataProductAssignment/
 
@@ -20,10 +22,11 @@ date: 12/21/2014
 
 Diabetes Study in German
 ========================================================
-####An accurate risk score based on anthropometric, dietary, and lifestyle factors to predict the development of type 2 diabetes.
+
+An accurate risk score based on anthropometric, dietary, and lifestyle factors to predict the development of type 2 diabetes.
 
 
-#####Schulze, M. B. et al. An accurate risk score based on anthropometric, dietary, and lifestyle factors to predict the development of type 2 diabetes. Diabetes Care 30, 510–5 (2007).
+Schulze, M. B. et al. An accurate risk score based on anthropometric, dietary, and lifestyle factors to predict the development of type 2 diabetes. Diabetes Care 30, 510–5 (2007).
 
 
 
